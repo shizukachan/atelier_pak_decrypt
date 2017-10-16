@@ -6,7 +6,7 @@ Usage
 
 **BACK UP ALL GAME ARCHIVES AND FOLDERS BEFORE RUNNING ANY OF THE UNPACKERS**
 
-The decrypter/unarchiver will extract files to the current directory, and if files/directories already exist, they will be overwritten. Furthermore, it will be difficult to tell original from unpacked files.
+The decrypter/unarchiver will extract files to the current directory, and if files/directories already exist, they **will be overwritten**. Furthermore, if files or directories already exist, it will be **difficult to tell original from unpacked files**.
 
 This is a console mode program, so you'll have to open a `cmd` window and switch to the proper directory. To unpack an archive to the current directory, use `a17_decrypt PACK00.pak` or `a18_decrypt PACK00.pak`, where PACK00.pak is the archive you wish to unpack.
 
@@ -30,7 +30,7 @@ The performance of the decryption could be improved by vectorizing it; in the ga
 License
 =======
 
-This software is provided 'as-is', without any express or implied  warranty.
+This software is provided 'as-is', without any express or implied warranty.
 In no event will the authors be held liable for any damages
 arising from the use of this software. Permission is granted
 to anyone to use this software for any purpose, including
