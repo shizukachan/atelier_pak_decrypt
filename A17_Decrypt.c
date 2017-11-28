@@ -136,9 +136,9 @@ int main(int argc, char **argv)
 			fprintf(stderr,"Can't open file %s\n",Entries[i].filename+1);
 			continue;
 		}
-		fseek(A,Entries[i].data_offset+file_data_offset,SEEK_SET);
+		_fseeki64(A,(__int64)Entries[i].data_offset+(__int64)file_data_offset,SEEK_SET);
 #ifdef DECODE_PAK
-		fseek(C,Entries[i].data_offset+file_data_offset,SEEK_SET);
+		_fseeki64(C,(__int64)Entries[i].data_offset+(__int64)file_data_offset,SEEK_SET);
 #endif
 		buf = (unsigned char*)malloc(sizeof(unsigned char)*Entries[i].length);
 		fread(buf,1,Entries[i].length,A);
@@ -152,7 +152,7 @@ int main(int argc, char **argv)
 		fclose(B);
 	}
 #ifdef DECODE_PAK
-	fseek(C,0x10,SEEK_SET);
+	_fseeki64(C,(__int64)0x10,SEEK_SET);
 	for (int i=0;i<Header.fileEntries;i++)
 	{
 		memset(Entries[i].key,0,sizeof(Entries[i].key));
