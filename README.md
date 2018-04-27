@@ -20,7 +20,7 @@ This version works with Atelier Sophie's archives. This may work with other 32-b
 A18_Decrypt
 -----------
 
-This version works with Atelier Firis and Blue Reflection's archives. Presumably it should also work with other 64-bit GUST PC ports.
+This version works with Atelier Firis and Blue Reflection's archives. Though I haven't checked all of them, Atelier Lydie and Suelle seems to work as well. Presumably it should also work with other 64-bit GUST PC ports.
 
 Performance
 ===========
